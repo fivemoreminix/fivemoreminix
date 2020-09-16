@@ -1,0 +1,23 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Luke I. Wilson"
+
+[params]
+    dateFormat = "Jan 2, 2006"
+
+[permalinks]
+    blog = "/blog/:filename/"
+
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+    [[menu.main]]
+        name = "Blog"
+        url = "/blog/"
+    [[menu.main]]
+        name = "Tags"
+        url = "/tags/"
+
+[taxonomies]
+    tag = "tags"
