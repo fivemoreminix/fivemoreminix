@@ -1,6 +1,6 @@
 <div>
     <nav>
-        {{ range .Site.Menus.main }}
+        {{ range sort .Site.Menus.main }}
         {{ $text := .Name | safeHTML }}
         <a href="{{ .URL }}">{{ $text }}</a>
         {{ end }}
