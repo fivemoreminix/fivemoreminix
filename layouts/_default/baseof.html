@@ -8,7 +8,7 @@
         <meta name="description" content="{{ .Description }}">
         {{ end }}
         {{ if isset .Params "tags" }}
-        <meta name="keywords" content="{{ delimit .Params.tags ", " "" }}">
+        <meta name="keywords" content="{{ delimit .Params.tags ", " ", " }}">
         {{ end }}
     </head>
     <body>
