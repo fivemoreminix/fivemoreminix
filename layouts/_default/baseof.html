@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="/css/style.css">
+        <meta name="revisit-after" content="1 days">
+        <meta name="robots" content="index, follow">
         <meta name="author" content="Luke I. Wilson">
         {{ if isset .Params "description" }}
         <meta name="description" content="{{ .Description }}">
@@ -11,6 +13,8 @@
         {{ if isset .Params "tags" }}
         <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
         {{ end }}
+
+        <meta name="yandex-verification" content="a4f3fd5b164b7a19" />
     </head>
     <body>
         {{ partial "nav.html" . }}
