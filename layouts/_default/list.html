@@ -1,12 +1,21 @@
 {{ define "main" }}
 
 <h1>{{ .Title }}</h1>
+{{ if eq .Title "Tags" }}
+<p>(In alphabetical order)</p>
+<p>
+{{ range .Pages.ByTitle }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
+{{ end }}
+</p>
+{{ else }}
 {{ range .Pages.ByPublishDate.Reverse }}
 <p>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
     <br>
     {{ partial "date-and-tags.html" . }}
 </p>
 {{ end }}
+{{ end}}
 
 {{ end }}

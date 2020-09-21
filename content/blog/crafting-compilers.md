@@ -3,7 +3,7 @@ title: "Crafting Compilers: What Are Programming Languages?"
 date: 2020-01-04
 photo: /images/crafting-compilers/compilers-mystery.png
 description: Compilers are one of the very few types of software that become as complex as operating systems. Compilers are daunting because they require a deep understanding. This is an illustrated introduction to how programming languages work.
-tags: ["compilers", "interpreters", "lexers", "ast", "parsers", "code generators", "basics"]
+tags: ["compilers", "interpreters", "lexers", "ast", "parsers", "code generators", "basics", "theory"]
 draft: false
 ---
 

@@ -3,6 +3,7 @@
 <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
 {{ with .Params.tags }}
     <br>
+    Tags:
     {{ range . }}
     {{ $href := print (absURL "tags/") (urlize .) }}
     <a href="{{ $href }}">{{ . }}</a>

@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://lukewilson.me/"
 languageCode = "en-us"
 title = "Luke I. Wilson"
 
@@ -10,13 +10,13 @@ title = "Luke I. Wilson"
 
 [menu]
     [[menu.main]]
-        name = "Home"
+        name = "home"
         url = "/"
     [[menu.main]]
-        name = "Blog"
+        name = "blog"
         url = "/blog/"
     [[menu.main]]
-        name = "Tags"
+        name = "tags"
         url = "/tags/"
 
 [taxonomies]

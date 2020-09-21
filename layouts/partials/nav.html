@@ -1,8 +1,5 @@
 <div>
     <nav>
-        {{ range sort .Site.Menus.main }}
-        {{ $text := .Name | safeHTML }}
-        <a href="{{ .URL }}">{{ $text }}</a>
-        {{ end }}
+        {{ range $i, $e := .Site.Menus.main }}{{ if $i }} | {{ end }} <a href="{{ $e.URL }}">{{ $e.Name | safeHTML }}</a> {{ end }}
     </nav>
 </div>

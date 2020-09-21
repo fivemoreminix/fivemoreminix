@@ -1,7 +1,7 @@
 ---
 title: "Understanding Compilers — For Humans"
 date: 2018-06-10
-tags: ["C", "assembler", "parsing", "programming", "rust", "interpreters", "compilers"]
+tags: ["C", "assembler", "parsers", "programming", "rust", "interpreters", "compilers"]
 description: "Do you click that green run button, but don’t really know what’s going on under the hood? Do you want to know how a programming language works? Let’s crack the case wide open with compilers in this article."
 photo: "/images/ast.png"
 draft: false
