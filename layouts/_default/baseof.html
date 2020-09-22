@@ -13,8 +13,6 @@
         {{ if isset .Params "tags" }}
         <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
         {{ end }}
-
-        <meta name="yandex-verification" content="a4f3fd5b164b7a19" />
     </head>
     <body>
         {{ partial "nav.html" . }}
