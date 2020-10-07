@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 <header>
+	<!-- TODO: A photo of me -->
     <h3>Luke I. Wilson</h3>
-    <!-- TODO: A photo of me -->
     <!-- TODO: Contact info (GitHub, Twitter, Email, Medium buttons) -->
     <ul class="no-bullets">
         <li><img src="/icons/github.svg"><a href="https://github.com/codemessiah" target="_blank"> GitHub</a></li>
@@ -11,8 +11,7 @@
     </ul>
 </header>
 
-<p>I am an 18 year old hobbyist computer programmer. My favorite hobby is programming, which I've been mastering since I was eleven.</p>
-<p>On this website you will find my blog where I write about computer science, my contact information, and other random items. Navigation can be found at the top left.</p>
+<p>I started programming as a kid, tinkering with Visual Basic. Today, I work with low level code to write high performance and experimental software for consumer computer systems. I'm passionately curious about computers and FOSS.</p>
 
 {{ with .Site.GetPage "/blog" }}
 <h2>Recent Blog Posts</h2>
@@ -40,15 +39,15 @@
 
 <h3>Quotes</h3>
 <pre>
-    minierolls: All I got stuck on was proper thread semantics in Zig
-    minierolls: Just needed a few hours to sit down and do it right, but haven’t had the time recently 😦
-    codemessiah: I went stupid on that shit
-    codemessiah: I literally assumed data races would occur but as long as I only read then it won't cause problems
-    minierolls: lmao nice
-    minierolls: fair assumption
-    codemessiah: 🖕🏼 f*ck you Rust
-    minierolls: LOL
-    minierolls: what a mood
+minierolls: All I got stuck on was proper thread semantics in Zig
+minierolls: Just needed a few hours to sit down and do it right, but haven’t had the time recently 😦
+codemessiah: I went stupid on that shit
+codemessiah: I literally assumed data races would occur but as long as I only read then it won't cause problems
+minierolls: lmao nice
+minierolls: fair assumption
+codemessiah: 🖕🏼 f*ck you Rust
+minierolls: LOL
+minierolls: what a mood
 </pre>
 
 {{ end }}
