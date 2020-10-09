@@ -19,6 +19,10 @@ enableRobotsTXT = true
     [[menu.main]]
         name = "tags"
         url = "/tags/"
+	[[menu.main]]
+		name = "quotes"
+		url = "/quotes/"
 
 [taxonomies]
     tag = "tags"
+	quote = "quotes"
