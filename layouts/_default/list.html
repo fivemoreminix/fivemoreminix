@@ -12,7 +12,7 @@
 {{ if eq .Title "Quotes" }}
 <p>These are quotes that I like. When this page gets too long I may refactor these into categories.</p>
 {{ range .Pages.ByPublishDate }}
-    {{ $id := .Title }}
+    {{ $id := urlize .Title }}
     <blockquote id="{{ $id }}"><a class="no-underline" href="#{{ $id }}">{{ .Content }}</a></blockquote>
 {{ end }}
 {{ else }}

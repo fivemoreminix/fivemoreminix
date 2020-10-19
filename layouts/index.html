@@ -15,6 +15,10 @@
 <p>Medium generously pays me about $15/month for the articles I wrote on their site. While the passive income is nice, I don't believe it is approprite for my desire to teach and blog unbiased and without clickbait titles. This blog (lukewilson.me) is where I will be writing all new content. My old blog at Medium can be found <a href="https://medium.com/@thelukaswils" target="_blank">here</a>.</p>
 <p>This site uses no tracking, cookies, nor JavaScript. You can see <a href="https://github.com/codemessiah/codemessiah" target="_blank">the site code on GitHub</a>.</p>
 
+<blockquote>
+"One of the least understood pieces of the open source puzzle is how so many good programmers would deign to work for absolutely no money. A word of motivation is in order. In a society where survival is more or less assured, money is not the greatest of motivators. It's been well established that folks do their best work when they are driven by a passion. When they are having fun." — Linus Torvalds (*Just For Fun* pg. 227)
+</blockquote>
+
 {{ with .Site.GetPage "/blog" }}
 <h2>Recent Blog Posts</h2>
 {{ range first 5 .Pages.ByPublishDate.Reverse }}
@@ -35,22 +39,13 @@
 
 <h2>Reading List</h2>
 <ul>
-    <li><a class="title">Just For Fun </a><a style="font-size: smaller;">Linus Torvalds, David Diamond</a> (Autobiography)</li>
+    <li><s><a class="title">Just For Fun </a><a style="font-size: smaller;">Linus Torvalds, David Diamond</a> (Autobiography)</s></li>
+    <li><a class="title">Software Engineering at Google: </a>Lessons Learned From Programming Over Time <a style="font-size: smaller;">Titus Winters, Tom Mashreck, and Hyrum Wright</a></li>
     <li><a class="title">Modern Operating Systems: Fourth Edition </a><a style="font-size: smaller;">Andrew S. Tanenbaum, Herbert Bos</a></li>
     <li><a class="title">Compilers: Principles, Techniques, and Tools </a><a style="font-size: smaller;">Alfred V. Aho, Ravi Sethi, Jeffrey D. Ullman</a></li>
 </ul>
 
-<h3>Quotes</h3>
-<pre>
-minierolls: All I got stuck on was proper thread semantics in Zig
-minierolls: Just needed a few hours to sit down and do it right, but haven’t had the time recently 😦
-codemessiah: I went stupid on that shit
-codemessiah: I literally assumed data races would occur but as long as I only read then it won't cause problems
-minierolls: lmao nice
-minierolls: fair assumption
-codemessiah: 🖕🏼 f*ck you Rust
-minierolls: LOL
-minierolls: what a mood
-</pre>
+<h3><a href="/quotes">Quotes</a></h3>
+See <a href="/quotes">quotes I like</a>.
 
 {{ end }}
