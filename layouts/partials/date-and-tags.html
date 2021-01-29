@@ -1,5 +1,5 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
-{{ $dateFormat := .Site.Params.dateFormat | default "Jan 1, 2020" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 1, 1970" }}
 <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
 {{ with .Params.tags }}
     <br>
@@ -9,3 +9,4 @@
     <a href="{{ $href }}">{{ . }}</a>
     {{ end }}
 {{ end }}
+<p>Reads in about {{ .ReadingTime }} minute{{ if gt .ReadingTime 1 }}s{{ end }}.</p>
