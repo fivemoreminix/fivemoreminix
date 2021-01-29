@@ -1,6 +1,6 @@
 ---
 title: "Working With Godot 2, Developing VRMN NVZN"
-date: 2021-01-26
+date: 2021-01-29
 tags: ["games", "design", "godot"]
 # photo:
 # description:
