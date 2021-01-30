@@ -37,4 +37,23 @@ body {
 	font-size: 14pt;
 }
 
-blockquote:hover {background-color: lightgray;}
+blockquote {
+    padding: 15px;
+}
+
+blockquote:hover {background-color: rgb(226, 226, 226);}
+blockquote:target {border: 2px solid black;}
+
+html {
+    background-color: #f8f8f8;
+    color: #1b1b1b;
+}
+
+@media (prefers-color-scheme: dark) {
+    blockquote:hover {background-color: rgb(37, 37, 37);}
+
+    html {
+        background-color: #2a2a2e;
+        color: #d7d7db;
+    }
+}
