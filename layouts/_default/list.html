@@ -13,7 +13,7 @@
 <p>These are quotes that I like. When this page gets too long I may refactor these into categories.</p>
 {{ range .Pages.ByPublishDate }}
     {{ $id := urlize .Title }}
-    <blockquote id="{{ $id }}"><a class="no-underline" href="#{{ $id }}">{{ .RawContent }} — {{ .Params.citation }}</a></blockquote>
+    <a class="no-underline" href="#{{ $id }}"><blockquote id="{{ $id }}">{{ .RawContent }} — {{ .Params.citation }}</blockquote></a>
 {{ end }}
 {{ else }}
 {{ range .Pages.ByPublishDate.Reverse }}
