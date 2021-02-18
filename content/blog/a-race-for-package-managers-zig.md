@@ -1,6 +1,6 @@
 ---
 title: "A Race for Package Managers - Zig"
-date: 2021-1-29
+date: 2021-01-29
 tags: ["programming", "zig"]
 # photo:
 description: "Members of the Zig community are rushing to develop the first package managers."
