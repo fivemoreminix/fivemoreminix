@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="/css/style.css">
         <meta name="revisit-after" content="1 days">
+        {{ range .AlternativeOutputFormats -}}
+            {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+        {{ end -}}
         <meta name="robots" content="index, follow">
         <meta name="author" content="Luke I. Wilson">
         {{ if isset .Params "description" }}
