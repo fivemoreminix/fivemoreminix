@@ -1,5 +1,6 @@
 * See my website at https://lukewilson.me
-* Contact me on Discord: Code Messiah#7637
+* Contact me on Discord: fivemoreminix#7637
+* Matrix: @fivemoreminix:matrix.org
 * or email: thelukaswils@gmail.com
 
-Thanks 🙂
+Thanks! :^)
