@@ -1,5 +1,3 @@
-<div>
-    <nav>
-        {{ range $i, $e := .Site.Menus.main }}{{ if $i }} | {{ end }} <a href="{{ $e.URL }}">{{ $e.Name | safeHTML }}</a> {{ end }}
-    </nav>
-</div>
+<nav>
+    {{ range $i, $e := .Site.Menus.main }}{{ if $i }} | {{ end }} <a href="{{ $e.URL }}">{{ $e.Name | safeHTML }}</a> {{ end }}
+</nav>

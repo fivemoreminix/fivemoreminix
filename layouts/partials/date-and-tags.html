@@ -1,13 +1,12 @@
-{{ $dateTime := .PublishDate.Format "2006-01-02" }}
-{{ $dateFormat := .Site.Params.dateFormat | default "Jan 1, 1970" }}
-<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
 {{ with .Params.tags }}
-    <br>
-    Tags:
     {{ range . }}
     {{ $href := print (absURL "tags/") (urlize .) }}
-    <a href="{{ $href }}">{{ . }}</a>
+    <a href="{{ $href }}" class="tag">{{ . }}</a>
     {{ end }}
 {{ end }}
 <br>
-Reads in roughly {{ .ReadingTime }} minute{{ if gt .ReadingTime 1 }}s{{ end }}.
+Reads in {{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}.
+{{ $dateTime := .PublishDate.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "January 1, 1970" }}
+<br>
+<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>

@@ -1,10 +1,10 @@
- - Replace non-standard system fonts with Google Fonts
- - Make links more visible (CSS)
+ X Replace non-standard system fonts with Google Fonts
+ X Make links more visible (CSS)
  - Make posts more readable, use margins on left and right to accomplish this
- - Make font sizes larger
- - Remake navbar to be not as oldschool, and responsive to mobile (CSS flexbox + JS)
+ X Make font sizes larger
+ ? Remake navbar to be not as oldschool, and responsive to mobile (CSS flexbox + JS)
  - Profile picture on home page
- - Make my name normal, I don't like "Luke I. Wilson"
- - Replace those garbage social links with colored icons
+ X Make my name normal, I don't like "Luke I. Wilson"
+ X Replace those garbage social links with colored icons -> moving them to navbar
  - Install shynet for tracking
  - Replace absolute units in CSS with relative ems and rems

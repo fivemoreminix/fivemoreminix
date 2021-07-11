@@ -1,7 +1,53 @@
-.no-bullets {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#profile {
+    padding: 0 30% 0 30%;
+}
+
+#profile-photo {
+    width: 300px;
+    height: auto;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profile-name {
+    text-align: center;
+}
+
+.post-listing-title {
+    font-size: 25px;
+    margin-block-end: 0;
+}
+
+.tag {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 4px;
+    /* border: 2px solid rgba(0, 0, 0, 0.75); */
+    border-radius: 10px;
+    background-color: rgba(95, 158, 160, 0.4);
+}
+
+.quote {
+    color: #1b1b1b;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,9 +63,20 @@ img {
 a {color:inherit;}
 a:visited {color:inherit;}
 a.no-underline {text-decoration: none;}
+a.no-highlight:hover {
+    background-color: inherit;
+    color: inherit;
+    transition: none;
+}
+a:hover {
+    background-color: #1b1b1b;
+    color: #f8f8f8;
+    transition: background-color 0.5s, color 0.5s;
+}
 
 nav {
-    font-family: serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 15px;
 }
 
 pre {
@@ -32,15 +89,13 @@ pre {
 body {
 	line-height: 1.5;
 	margin: 0 auto 125px auto;
+    padding: 0 24px 0 24px;
 	max-width: 960px;
     font-family: 'Lora', serif;
 	font-size: 20px;
 }
 
-blockquote {
-    padding: 15px;
-}
-
+blockquote {padding: 15px;}
 blockquote:hover {background-color: rgb(226, 226, 226);}
 blockquote:target {border: 2px solid black;}
 

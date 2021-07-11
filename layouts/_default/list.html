@@ -2,24 +2,21 @@
 
 <h1>{{ .Title }}</h1>
 {{ if eq .Title "Tags" }}
-<p>(In alphabetical order)</p>
 <p>
 {{ range .Pages.ByTitle }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a> 
+    <a href="{{ .RelPermalink }}" class="tag">{{ .Title }}</a> 
 {{ end }}
 </p>
 {{ else }}
 {{ if eq .Title "Quotes" }}
-<p>These are quotes that I like. When this page gets too long I may refactor these into categories.</p>
 {{ range .Pages.ByPublishDate }}
     {{ $id := urlize .Title }}
-    <a class="no-underline" href="#{{ $id }}"><blockquote id="{{ $id }}">{{ .RawContent }} — {{ .Params.citation }}</blockquote></a>
+    <a href="#{{ $id }}" class="no-underline no-highlight"><blockquote id="{{ $id }}">{{ .RawContent }} — {{ .Params.citation }}</blockquote></a>
 {{ end }}
 {{ else }}
 {{ range .Pages.ByPublishDate.Reverse }}
 <p>
-    <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-    <br>
+    <a href="{{ .RelPermalink }}"><h2 class="post-listing-title">{{ .Title }}</h2></a>
     {{ partial "date-and-tags.html" . }}
 </p>
 {{ end }}

@@ -4,7 +4,7 @@ title = "Luke I. Wilson"
 enableRobotsTXT = true
 
 [params]
-    dateFormat = "Jan 2, 2006"
+    dateFormat = "January 2, 2006"
 
 [permalinks]
     blog = "/blog/:filename/"
