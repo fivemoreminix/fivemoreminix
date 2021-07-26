@@ -1,6 +1,7 @@
 ---
 title: "Why Rust Crates Drive Me Crazy (A Semver Rant)"
 date: 2021-07-25
+tags: ["rust", "rant"]
 ---
 
 Since I started using Rust back in 2017, I began to notice an odd pattern: crates always staying in the minor versions. Crates are versioned with a string identifying their state of development, production-readiness, and likely whether any breaking changes occurred since the last version. All of these things can be determined by reading the version of a Rust crate. This system is known as Semantic Versioning, and every Rust crate agrees to it by a) using the version field, and b) publishing their crate on [crates.io](https://crates.io).
