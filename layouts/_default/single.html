@@ -1,14 +1,5 @@
 {{ define "main" }}
 
-<article>
-    <header>
-        <h1>{{ .Title }}</h1>
-        {{ partial "date-and-tags.html" . }}
-    </header>
-    <br>
-    {{ .Content }}
-</article>
-
-{{ partial "footer.html" . }}
+{{ .Content }}
 
 {{ end }}
