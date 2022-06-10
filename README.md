@@ -1,6 +1,6 @@
-* See my website at https://lukewilson.me
-* Contact me on Discord: fivemoreminix#7637
-* Matrix: @fivemoreminix:matrix.org
-* or email: thelukaswils@gmail.com
-
-Thanks! :^)
+## How you can reach me
+ 📫 **Email:** [thelukaswils@gmail.com](mailto:thelukaswils@gmail.com)
+ 
+ 🎮 **Discord:** fivemoreminix#7637
+ 
+ :octocat: **GitHub:** Drop an issue or PR on any of my repos
