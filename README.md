@@ -1,4 +1,4 @@
 ## How you can reach me
- 📝 **Discord:** fivemoreminix#7637
+ 📝 **Discord:** fivemoreminix
  
  📬 **Email:** thelukaswils@gmail.com
